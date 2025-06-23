@@ -17,10 +17,10 @@ export class CookieUtils {
     // Set refresh token cookie (7 days)
     res.cookie("refreshToken", refreshToken, {
       httpOnly: true,
-      secure: isProduction,
-      sameSite: isProduction ? "strict" : "lax",
-      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+      secure: true,
+      sameSite: "none",
       domain: config.cookieDomain,
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     })
   }
 

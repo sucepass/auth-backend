@@ -8,7 +8,7 @@ export const config = {
   jwtRefreshSecret: process.env.JWT_REFRESH_SECRET || "your-super-secret-refresh-key",
   nodeEnv: process.env.NODE_ENV || "development",
   cookieDomain: process.env.COOKIE_DOMAIN,
-  corsOrigin: process.env.CORS_ORIGIN || "http://localhost:3002",
+  corsOrigin: process.env.CORS_ORIGIN || "http://localhost:3000",
   authRateLimit: Number(process.env.AUTH_RATE_LIMIT) || 5,
   rateLimit: Number(process.env.RATE_LIMIT) || 100,
 }
